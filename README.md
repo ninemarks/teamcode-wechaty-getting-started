@@ -6,11 +6,10 @@
 
 Deploy to TeamCode for Wechaty Starter Project
 
-[![Deploy](https://static01.teamcode.com/badge/teamcode-deploy-to-teamcode.svg)](https://teamcode.com/deploy)
+[![Deploy](https://static01.teamcode.com/badge/teamcode-deploy-to-teamcode.svg)](https://teamcode.com/from-url?gitUrl=https://github.com/ninemarks/teamcode-wechaty-getting-started)
 
 The 'Deploy to TeamCode' button enables users to deploy apps to TeamCode's Tin.
 > Tin is a product of TeamCode that can generate runnable applications instantly without manual environment configuration.
-
 
 ## FEATURES
 
@@ -19,6 +18,12 @@ The 'Deploy to TeamCode' button enables users to deploy apps to TeamCode's Tin.
 1. Hot Module Reload Enabled for convenience when developing. See `src/handlers/on-*.ts`
 1. Send Online/Offline Notification Message to BotSelf when the Program Start/Stop. See `src/finis.ts`
 1. Simple Web Server that can be used to Scan QR Code, or any other operations integrated with Wechaty. See `src/start-web.ts`
+
+## DEPLOYMENT INSTRUCTIONS
+1. Click the `Deploy to TeamCode`.
+2. Wait for the building process.
+3. Set HTTP port with `8788`.
+4. Click "Next" to run the app.
 
 ## SEE ALSO
 - [Introducing Tin](https://www.teamcode.com/docs/en-US/tin/what-is-tin)
