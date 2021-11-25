@@ -1,0 +1,51 @@
+{
+  "name": "teamcode-wechaty",
+  "version": "0.6.3",
+  "description": "Deploy to TeamCode Button for Wechaty",
+  "main": "index.js",
+  "engines": {
+    "node": "16"
+  },
+  "scripts": {
+    "build": "wechaty-puppet-install",
+    "lint": "npm run lint:es && npm run lint:ts",
+    "lint:ts": "tsc --noEmit",
+    "start": "./node_modules/.bin/ts-node src/main.ts",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\"",
+    "lint:es": "eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninemarks/teamcode-wechaty-getting-started.git"
+  },
+  "author": "Huan LI <zixia@zixia.net>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ninemarks/teamcode-wechaty-getting-started/issues"
+  },
+  "homepage": "https://github.com/ninemarks/teamcode-wechaty-getting-started#readme",
+  "dependencies": {
+    "@chatie/tsconfig": "^0.17.1",
+    "@hapi/hapi": "^20.1.3",
+    "@types/hapi__hapi": "^20.0.8",
+    "@types/raven": "^2.5.3",
+    "@types/read-pkg-up": "^6.0.0",
+    "brolog": "^1.12.4",
+    "finis": "^0.4.4",
+    "read-pkg-up": "^7.0.0",
+    "typescript": "4.3",
+    "wechaty": "^0.61.6",
+    "wechaty-puppet-wechat": "^0.28.0"
+  },
+  "devDependencies": {
+    "@chatie/eslint-config": "^0.12.4",
+    "@chatie/git-scripts": "^0.6.2",
+    "tstest": "^0.4.10"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  }
+}
