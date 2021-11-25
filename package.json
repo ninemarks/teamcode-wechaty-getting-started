@@ -1,6 +1,6 @@
 {
   "name": "teamcode-wechaty",
-  "version": "0.6.3",
+  "version": "1.7.24",
   "description": "Deploy to TeamCode Button for Wechaty",
   "main": "index.js",
   "engines": {
@@ -35,13 +35,15 @@
     "brolog": "^1.12.4",
     "finis": "^0.4.4",
     "read-pkg-up": "^7.0.0",
+    "ts-node": "^10.4.0",
     "typescript": "4.3",
-    "wechaty": "^0.61.6",
-    "wechaty-puppet-wechat": "^0.28.0"
+    "wechaty": "~1.7.22",
+    "wechaty-puppet-wechat": "~1.0.1"
   },
   "devDependencies": {
     "@chatie/eslint-config": "^0.12.4",
     "@chatie/git-scripts": "^0.6.2",
+    "cross-env": "^7.0.3",
     "tstest": "^0.4.10"
   },
   "git": {
