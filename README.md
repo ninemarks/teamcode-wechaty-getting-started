@@ -23,7 +23,7 @@ The 'Deploy to TeamCode' button enables users to deploy apps to TeamCode's Tin.
 1. Click the `Deploy to TeamCode`.
 2. Wait for the building process.
 3. Set HTTP port with `8788`.
-4. Click "Next" to run the app.
+4. Click "Next" button to run the app.
 
 ## SEE ALSO
 - [Introducing Tin](https://www.teamcode.com/docs/en-US/tin/what-is-tin)
